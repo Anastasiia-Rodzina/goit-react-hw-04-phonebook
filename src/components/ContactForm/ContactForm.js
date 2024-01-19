@@ -19,7 +19,10 @@ const ContactForm = ({ onSubmit }) => {
     e.preventDefault();
 
     onSubmit({ ...state });
-    setState({ ...state });
+    setState({
+      name: '',
+      number: '',
+    });
   };
 
   const { name, number } = state;
